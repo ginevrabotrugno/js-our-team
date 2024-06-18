@@ -53,10 +53,11 @@ for (let i = 0; i < membersList.length; i++) {
     let card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = 
-        `<span>nome: ${member.name}</span>
-        <span>ruolo: ${member.role}</span>
-        <div>
-            <img src="img/${member.pic}" alt="member picture">
+        `                    
+        <img src="img/${member.pic}" alt="member picture">
+        <div class="title">
+            <span class="name_member">${member.name}</span>
+            <span>${member.role}</span>
         </div>
         `;
 
