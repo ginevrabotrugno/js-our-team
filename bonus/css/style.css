@@ -4,15 +4,49 @@
     box-sizing: border-box;
 }
 
-
-.card {
-    /* debug */
-    margin: 25px;
+:root{
+    background-color: antiquewhite;
 }
 
-.card span {
-    /* debug */
-    font-size: 20px;
-    margin: 20px;
+header{
     line-height: 2;
 }
+
+header h1 {
+    font-size: 35px;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#container{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    width: calc((100% / 3) - 10px);
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+}
+
+.title span {
+    display: block;
+    margin: 20px;
+}
+
+.name_member {
+    font-size: 20px;
+    font-weight: 600;
+}
+
