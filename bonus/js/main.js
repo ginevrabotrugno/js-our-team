@@ -38,6 +38,9 @@ const membersList = [
 
 // console.log(membersList);
 
+// seleziono l'elemento contenitore
+let container = document.getElementById("container");
+
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 for (let i = 0; i < membersList.length; i++) {
     const member = membersList[i];
@@ -45,9 +48,6 @@ for (let i = 0; i < membersList.length; i++) {
     console.log("nome: " + member.name + " ruolo: " +  member.role + " stringa foto: " +  member.pic);
     
     // Stampare le stesse informazioni su DOM sottoforma di stringhe
-
-    // seleziono l'elemento contenitore
-    let container = document.getElementById("container");
 
     // creo l'elemento che conterrà le stringhe
     let card = document.createElement("div");
